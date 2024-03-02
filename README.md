@@ -1,15 +1,15 @@
-### Linear Regression Model (Training Data)
+## Linear Regression Model (Training Data)
 Overview
 This README file provides an overview of the process involved in fitting a linear regression model to training data. The model is trained using numpy functions for efficient computation without the need for loops.
 
-### Linear Model Overview
+## Linear Model Overview
 The linear model is based on the following components:
 
-> Cost Function
-> Model Equations
-> Matrix Form of Model Equations
+ Cost Function
+ Model Equations
+ Matrix Form of Model Equations
 
-### Implementation
+## Implementation
 1. Fit Linear Regression Model
 Cost Function: The cost function measures the error between predicted and actual values.
 Model Equations: Derivatives of the cost function are used to derive the model equations.
@@ -25,7 +25,7 @@ Cost Function: Mean square error is calculated using the cost function to evalua
 5. Plot Data
 Training Data Plot: Scatter plot of training data along with the linear regression model.
 Test Data Plot: Scatter plot of test data along with the linear regression model.
-### Expected Outputs
+## Expected Outputs
 Linear Model Matrices: Display of computed matrices for the linear regression model.
 MSE of Linear: Mean square error value for the linear regression model.
 Training Data Plot: Expected plot of training data with the linear regression model.
