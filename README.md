@@ -1,5 +1,8 @@
 # 🎯 **Regression Model**
 
+![Untitled design (3)](https://github.com/user-attachments/assets/a801b18f-7272-48f6-925f-fa1c84c1d667)
+
+
 ## 📚 **Introduction**
 This project explores multiple regression models (Linear, Quadratic, Cubic, and higher-degree polynomials) to predict. The goal is to implement and compare models of increasing complexity, analyzing how the Mean Squared Error (MSE) changes with each model.
 
