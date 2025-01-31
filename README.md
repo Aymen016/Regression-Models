@@ -60,7 +60,7 @@ The following models were evaluated:
 - **Test Data Plot**: Plot the predicted regression line against the actual test data.
 
 ### **Example of Linear Model Plot:**
-![Linear Model](images/linear_model.png)
+![linear-model](https://github.com/user-attachments/assets/bed05356-7d60-4701-8ff5-8d3d1c7335dc)
 
 ## 📑 **Mean Squared Error (MSE) Comparison**
 
@@ -87,7 +87,7 @@ pip install numpy matplotlib pandas
 ### Running the Code
  1.Clone the repository:
 ```bash
-git clone <repository-url>
+git clone 
 ```
 
  2.Run the script:
