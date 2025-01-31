@@ -97,8 +97,10 @@ python regression_models.py
 
 This will train the models, compute MSE, and display the plots for training and testing data.
 
-🚧 Future Improvements
-Explore more advanced models such as Ridge or Lasso regression to regularize the model and reduce overfitting.
-Implement cross-validation to better evaluate model performance.
-Experiment with other regression techniques like Support Vector Machines (SVM) for regression.
-💬 Conclusion
+## 🚧 **Future Improvements**
+- Explore more advanced models such as **Ridge** or **Lasso regression** to regularize the model and reduce overfitting.
+- Implement **cross-validation** to better evaluate model performance.
+- Experiment with other regression techniques like **Support Vector Machines (SVM)** for regression.
+
+## 💬 **Conclusion**
+Through this project, we implemented and compared multiple polynomial regression models. We showed that higher-degree polynomials can improve the model's ability to fit the data but may also lead to overfitting if the degree is too high. The **Cubic** and **Quartic models** seem to offer the best trade-off between complexity and accuracy.
