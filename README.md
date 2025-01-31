@@ -1,33 +1,104 @@
-# Linear Regression Model (Training Data)
-Overview
-This README file provides an overview of the process involved in fitting a linear regression model to training data. The model is trained using numpy functions for efficient computation without the need for loops.
+# 🎯 **Regression Models for Titanic Dataset**
 
-# Linear Model Overview
-The linear model is based on the following components:
+## 📚 **Introduction**
+This project explores multiple regression models (Linear, Quadratic, Cubic, and higher-degree polynomials) to predict survival on the Titanic dataset. The goal is to implement and compare models of increasing complexity, analyzing how the Mean Squared Error (MSE) changes with each model.
 
-1. Cost Function
-2. Model Equations
-3. Matrix Form of Model Equations
+The project is part of an assignment to demonstrate regression techniques and model evaluation in Python.
 
-# Implementation
+## 📂 **Project Structure**
+- **trainRegression.csv**: Contains the training dataset with features and survival outcomes.
+- **testRegression.csv**: Contains the testing dataset where we need to predict the survival outcome.
+- **Main Code**: Python script that implements the regression models and visualizes results.
 
-1. Fit Linear Regression Model
-Cost Function: The cost function measures the error between predicted and actual values.
-Model Equations: Derivatives of the cost function are used to derive the model equations.
-Matrix Form: The model equations are transformed into a matrix form for efficient computation.
-2. Compute Model Parameters
-Matrix Multiplication: Model parameters are computed using matrix multiplication without using for loops.
-Training Data: Training data is used to compute the model parameters.
-3. Run Predictions
-Testing Data: Predictions are made on testing data using the computed model parameters.
-Matrix Multiplication: Predictions are made using matrix multiplication for efficient computation.
-4. Calculate Mean Square Error
-Cost Function: Mean square error is calculated using the cost function to evaluate the performance of the model.
-5. Plot Data
-Training Data Plot: Scatter plot of training data along with the linear regression model.
-Test Data Plot: Scatter plot of test data along with the linear regression model.
-## Expected Outputs
-### Linear Model Matrices: Display of computed matrices for the linear regression model.
-### MSE of Linear: Mean square error value for the linear regression model.
-### Training Data Plot: Expected plot of training data with the linear regression model.
-### Test Data Plot: Expected plot of test data with the linear regression model.
+## 🚀 **Goals**
+- Implement and compare **Linear**, **Quadratic**, **Cubic**, **Quartic (4th degree)**, **Quintic (5th degree)**, and **Sextic (6th degree)** regression models.
+- Visualize the regression lines for each model and analyze their performance using **Mean Squared Error (MSE)**.
+
+## 🛠️ **Tools and Libraries**
+We used the following Python libraries in this project:
+- **NumPy**: For numerical operations and matrix manipulations.
+- **Matplotlib**: For data visualization and plotting graphs.
+- **Pandas**: For data manipulation and CSV handling.
+
+```bash
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
+## 🚀 **Approach**
+
+### **Data Preprocessing**:
+- Load and clean the dataset using **Pandas**.
+- Convert the dataset into **NumPy arrays** for model calculations.
+
+### **Model Implementation**:
+- **Linear Regression**: Fit a simple line to the data using the normal equation.
+- **Polynomial Regression**: Fit higher-degree polynomial models (quadratic, cubic, etc.) using the same approach.
+- For each model, the equation is represented as a system of linear equations in matrix form. We solve for the model parameters using **matrix inversion**.
+
+### **Predictions**:
+- Using the model parameters, we calculate the predicted values (**y_hat**) for the test data.
+
+### **Model Evaluation**:
+- We evaluate the model performance using **Mean Squared Error (MSE)** to compare the different models.
+
+## 📊 **Results and Observations**
+The following models were evaluated:
+- **Linear Model**: Shows a simple relationship between the input (**X**) and output (**R**).
+- **Quadratic Model**: Introduces a curve and performs better than the linear model.
+- **Cubic Model**: Fits the data more closely, showing improved MSE compared to lower-degree models.
+- **Quartic & Quintic Models**: The MSE continues to improve, but higher-degree models may start to overfit.
+- **Sextic Model**: While this model performs better in training, it risks overfitting due to the high complexity of the polynomial.
+
+### **Key Insights**:
+- The **Cubic, Quartic, and Quintic models** offer a good balance between predictive power and complexity.
+- The **Sextic model** exhibits overfitting, as indicated by a slight rise in the MSE when compared to the 5th-degree model.
+
+## 📊 **Visualizations**
+- **Training Data Plot**: Scatter plot for the training data and regression line.
+- **Test Data Plot**: Plot the predicted regression line against the actual test data.
+
+### **Example of Linear Model Plot:**
+![Linear Model](images/linear_model.png)
+
+## 📑 **Mean Squared Error (MSE) Comparison**
+
+| Model            | MSE             |
+|------------------|-----------------|
+| Linear           | 0.3159          |
+| Quadratic        | 0.3260          |
+| Cubic            | 0.0515          |
+| Quartic          | 0.0500          |
+| Quintic          | 0.0442          |
+| Sextic           | 0.0445          |
+
+**Lower MSE** indicates better model performance.
+
+## 🧑‍💻 **How to Run the Project**
+
+### **Prerequisites**
+Ensure you have **Python** installed along with the required libraries:
+
+```bash
+pip install numpy matplotlib pandas
+```
+
+### Running the Code
+ 1.Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+ 2.Run the script:
+```bash
+python regression_models.py
+```
+
+This will train the models, compute MSE, and display the plots for training and testing data.
+
+🚧 Future Improvements
+Explore more advanced models such as Ridge or Lasso regression to regularize the model and reduce overfitting.
+Implement cross-validation to better evaluate model performance.
+Experiment with other regression techniques like Support Vector Machines (SVM) for regression.
+💬 Conclusion
