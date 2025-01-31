@@ -1,13 +1,13 @@
-# 🎯 **Regression Models for Titanic Dataset**
+# 🎯 **Regression Model**
 
 ## 📚 **Introduction**
-This project explores multiple regression models (Linear, Quadratic, Cubic, and higher-degree polynomials) to predict survival on the Titanic dataset. The goal is to implement and compare models of increasing complexity, analyzing how the Mean Squared Error (MSE) changes with each model.
+This project explores multiple regression models (Linear, Quadratic, Cubic, and higher-degree polynomials) to predict. The goal is to implement and compare models of increasing complexity, analyzing how the Mean Squared Error (MSE) changes with each model.
 
 The project is part of an assignment to demonstrate regression techniques and model evaluation in Python.
 
 ## 📂 **Project Structure**
-- **trainRegression.csv**: Contains the training dataset with features and survival outcomes.
-- **testRegression.csv**: Contains the testing dataset where we need to predict the survival outcome.
+- **trainRegression.csv**: Contains the training dataset with X and R values.
+- **testRegression.csv**: Contains the testing dataset where we need to predict the outcome.
 - **Main Code**: Python script that implements the regression models and visualizes results.
 
 ## 🚀 **Goals**
@@ -27,10 +27,6 @@ import pandas as pd
 ```
 
 ## 🚀 **Approach**
-
-### **Data Preprocessing**:
-- Load and clean the dataset using **Pandas**.
-- Convert the dataset into **NumPy arrays** for model calculations.
 
 ### **Model Implementation**:
 - **Linear Regression**: Fit a simple line to the data using the normal equation.
